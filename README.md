@@ -1,0 +1,2 @@
+# Thaina-venda-prototipo
+.
