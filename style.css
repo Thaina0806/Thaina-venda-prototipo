@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #050505;
+    color: #e0f7ff;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Cabeçalho */
+.top-text h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    color: #a5d8ff;
+    margin-bottom: 5px;
+}
+
+.top-text p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Container da Imagem */
+.image-wrapper {
+    position: relative;
+    margin: 30px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 50px rgba(0, 183, 255, 0.2);
+}
+
+.main-img {
+    width: 100%;
+    display: block;
+    filter: brightness(0.7) contrast(1.1);
+}
+
+/* Efeito Glassmorphism dos Cards */
+.glass-card {
+    position: absolute;
+    background: rgba(0, 50, 80, 0.4);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(0, 242, 255, 0.5);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: left;
+    box-shadow: 0 0 15px rgba(0, 242, 255, 0.3);
+}
+
+/* Card de Calorias */
+.card-calories {
+    top: 25%;
+    left: 40%;
+    width: 200px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #00f2ff;
+}
+
+.main-value {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.main-value span { font-size: 1rem; font-weight: normal; }
+
+/* Card de Energia */
+.card-energy {
+    top: 15%;
+    right: 5%;
+    width: 220px;
+}
+
+.status-item p { font-size: 0.75rem; color: #a5d8ff; }
+.status-item strong { color: #fff; font-size: 0.9rem; }
+hr { border: 0.5px solid rgba(0, 242, 255, 0.2); margin: 8px 0; }
+
+/* Lista de Benefícios */
+.features {
+    position: absolute;
+    bottom: 8%;
+    left: 35%;
+    text-align: left;
+}
+
+.features ul { list-style: none; }
+.features li {
+    font-size: 1.2rem;
+    color: #a5d8ff;
+    margin-bottom: 5px;
+    text-shadow: 0 0 8px rgba(0, 242, 255, 0.8);
+}
+
+.features li::before {
+    content: "●";
+    color: #00f2ff;
+    margin-right: 10px;
+}
+
+/* Footer */
+.bottom-quote {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: #87ceeb;
+    margin-top: 15px;
+}
+
+/* Ajuste Mobile */
+@media (max-width: 768px) {
+    .glass-card { width: 140px; padding: 8px; }
+    .top-text h1 { font-size: 1.5rem; }
+    .main-value { font-size: 1.5rem; }
+}
